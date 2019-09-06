@@ -1,0 +1,22 @@
+{
+  "name": "project_templates",
+  "version": "1.0.0",
+  "description": "template for a group of projects",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "fernando uribe",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "express-validator": "^6.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.6.12",
+    "morgan": "^1.9.1",
+    "nodemon": "^1.19.2"
+  }
+}
