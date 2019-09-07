@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo:400,700|Bitter:400,700|Lexend+Deca|Montserrat:100,200,300,400,500,600,700,800,900|Raleway:100,200,300,400,500,600,700,800,900|Roboto+Slab|Roboto:100,300,400,500,700,900|Ubuntu:300,400,500,700&display=swap');
+
+/* 
+font-family: 'Roboto', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Lexend Deca', sans-serif;
+font-family: 'Roboto Slab', serif;
+font-family: 'Arvo', serif;
+font-family: 'Bitter', serif;
+*/
+
+/* 
+colors
+#10ac84
+#1dd1a1
+#2f3640
+#718093
+#dcdde1
+#ffffff
+*/
+
+body{
+    font-family: 'Montserrat';
+    scroll-behavior: smooth;
+}
+
+.title{
+    font-family: 'Montserrat';
+    font-weight: 800;
+    color: #2f3640;
+}
+.subtitle{
+    font-family: 'Montserrat';
+    font-weight: 300;
+    color: #2f3640;
+    border-left: solid 4px #10ac84;
+    padding-left: 10px;
+}
+
+.content{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    color: #2f3640;
+}
+
+.sidebar{
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100vh;
+    position: fixed;
+    overflow-x: hidden;
+    z-index: 3;
+}
+
+.sidebar-body{
+    height: 100%;
+}
+
+.sidebar-header img{
+    border: solid 3px #000000;
+}
+
+.sidebar-nav .nav-link{
+    transition: .2s ease-out;
+}
+
+.sidebar-nav .nav-link:hover{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+}
+
+.sidebar-footer a{
+    text-decoration: none;
+}
+
+.main{
+    margin-left: 20%;
+}
+
+.envelope{
+    background: #000000;
+}
+
+@media only screen and (max-width: 760px) {
+    .main{
+        margin-left: 0;
+    }
+  } 

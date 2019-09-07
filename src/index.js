@@ -14,6 +14,9 @@ app.set('view engine', 'ejs')
 app.use(morgan('dev'))
 app.use(express.urlencoded({extended:false}))
 
+// static files
+app.use(express.static(path.join(__dirname, 'public')))
+
 // routes
 app.use(require('./router/routes'))
 app.use((req, res, next)=>{
