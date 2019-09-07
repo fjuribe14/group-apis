@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Lobster|Montserrat|Muli|Nunito|Oswald|Poppins|Questrial|Quicksand|Raleway|Roboto|Roboto+Mono|Ubuntu&display=swap');
+
+/* 
+font-family: 'Roboto', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Muli', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Abel', sans-serif;
+font-family: 'Lobster', cursive;
+font-family: 'Questrial', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+/*
+colors
+#ffcbcb
+#ffb5b5
+#407088
+#132743
+*/
+
+*{
+    font-family: 'questrial';
+}
+
+.bg-1{
+    background: #ffcbcb;
+}
+.color-1{
+    color: #ffcbcb;
+}
+
+.bg-2{
+    background: #ffb5b5;
+}
+.color-2{
+    color: #ffb5b5;
+}
+
+.bg-3{
+    background: #407088;
+}
+.color-3{
+    color: #407088;
+}
+
+.bg-4{
+    background: #132743;
+}
+.color-4{
+    color: #132743;
+}
+
+.nav-link, btn{
+    transition: .3s ease-out;
+}
+
+.nav-link:after{
+    content: '';
+    margin-top: 2px;
+    display: block;
+    width: 100%;
+    background: #fff;
+    height: 2px;
+}
+
+.nav-link:hover{
+    color: white;
+}
+
+body{
+    background: url('/fabiola/img/bg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.faby-title::after{
+     content: '';
+    display: block;
+    margin: 5px auto;
+    width: 20%;
+    background: #ffb5b5;
+    height: 2px;
+}
+
+.faby-subtitle::after{
+     content: '';
+    display: block;
+    margin: 5px auto;
+    width: 40%;
+    background: #407088;
+    height: 2px;
+}
+
+.btn-outline-light-faby{
+    border-radius: 0;
+    border: 2px solid #fff;
+    color: #407088;
+    background: transparent;
+}
+
+.btn-outline-light-faby:hover{
+    border: 2px solid #407088;
+    background: #407088;
+    color: #fff;
+}
+
+.btn-outline-pink-faby{
+    border-radius: 0;
+    border: 2px solid #fff;
+    color: #ffb5b5;
+    background: transparent;
+}
+
+.btn-outline-pink-faby:hover{
+    border: 2px solid #fff;
+    background: #fff;
+    color: #ffb5b5;
+}
+
+.exp{
+    border-left: 1px solid #ffcbcb;
+    height: 100%;
+}
+
+.exp::before{
+    content: '';
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    display: block;
+    background: #132743;
+    border-radius: 100%;
+    left: -5px;
+    top: 10%;
+}
+
+.form-control{
+    border-radius: 0;
+}
+
+@media only screen and (max-width: 600px){
+    .exp{
+    border-left: 1px solid #ffcbcb;
+    margin-left: 10px;
+    height: 100%;
+}
+}
