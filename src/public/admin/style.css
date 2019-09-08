@@ -85,6 +85,10 @@ body{
     height: 100vh;
 }
 
+.main-dashboard{
+    margin-left: 20%;
+}
+
 .envelope{
     background: #000000;
 }

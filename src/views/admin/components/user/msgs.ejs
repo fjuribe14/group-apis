@@ -1,0 +1,17 @@
+<h4 class="w-100 subtitle">messages</h4>
+<% msgs.forEach((msg, msgCounter) =>{ %>
+<% 
+        const date = new Date(msg.date);
+        const day = date.getDate()
+        const month = date.getMonth()
+        const year = date.getFullYear()
+    %>
+<div class="media w-100 border p-3 my-2 shadow-sm">
+    <h1 class="mr-3 align-self-center"><%= msgCounter + 1 %></h1>
+    <div class="media-body">
+        <h5 class="mt-0">to: <%= msg.name %> <small
+                class="float-right text-muted"><%= day+ '/' + month + '/' + year %></small></h5>
+        <%= msg.text %>
+    </div>
+</div>
+<% }) %>

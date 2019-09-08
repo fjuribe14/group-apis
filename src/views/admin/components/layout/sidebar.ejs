@@ -1,0 +1,48 @@
+<div class="sidebar d-none d-md-block shadow bg-light">
+    <div class="sidebar-body d-flex flex-column p-3">
+        <div class="sidebar-header text-center">
+            <i class="fas fa-user display-4"></i>
+            <h5 class="my-2">username <small><i class="fas fa-dot-circle text-success"></i></small></h5>
+            <hr>
+        </div>
+        <div class="sidebar-nav title text-capitalize nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+            aria-orientation="vertical">
+
+            <a class="nav-link my-1 border active" id="dashboard-tab" data-toggle="pill" href="#dashboard" role="tab"
+                aria-controls="dashboard" aria-selected="true">
+                <i class="fas fa-tachometer-alt mr-2"></i>
+                Dashboard
+            </a>
+            <a class="nav-link my-1 border" id="pages-tab" data-toggle="pill" href="#pages" role="tab"
+                aria-controls="pages" aria-selected="false">
+                <i class="fas fa-desktop mr-2"></i>
+                Pages
+            </a>
+            <a class="nav-link my-1 border" id="posts-tab" data-toggle="pill" href="#posts" role="tab"
+                aria-controls="posts" aria-selected="false">
+                <i class="fas fa-edit mr-2"></i>
+                Posts
+            </a>
+            <a class="nav-link my-1 border" id="messages-tab" data-toggle="pill" href="#messages" role="tab"
+                aria-controls="messages" aria-selected="false">
+                <i class="fas fa-comment-alt mr-2"></i>
+                Messages
+                <span class="badge badge-danger rounded-circle float-right"><%= msgBadge %></span>
+            </a>
+            <!-- <a class="nav-link my-1 border" id="repos-tab" data-toggle="pill" href="#repos" role="tab"
+                aria-controls="repos" aria-selected="false">
+                <i class="far fa-folder mr-2"></i>
+                repos
+            </a> -->
+
+            <a class="nav-link my-1 border" id="settings-tab" data-toggle="pill" href="#settings" role="tab"
+                aria-controls="settings" aria-selected="false">
+                <i class="fas fa-cog mr-2"></i>
+                settings
+            </a>
+        </div>
+        <div class="sidebar-footer mt-auto text-center">
+
+        </div>
+    </div>
+</div>

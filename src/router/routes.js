@@ -6,10 +6,12 @@ const { fernando, fabiola, mothtechAdmin } = require('../controllers/app.control
 router.route('/').get((req, res)=>{res.send('Mothtech page on bilding...')})
 
 // fabiola
-router.route('/fabiola').get(fabiola)
+router.route('/fabiola').get(fabiola.fabiolaIndex)
+router.route('/fabiola').post(fabiola.fabiolaSendMsg)
 
 // fernando
-router.route('/fernando').get(fernando)
+router.route('/fernando').get(fernando.fernandoIndex)
+router.route('/fernando').post(fernando.sendMsg)
 
 // admin
 router.route('/admin').get(mothtechAdmin.adminIndex)
