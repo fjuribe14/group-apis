@@ -18,9 +18,8 @@ routerCtrl.adminRegister = (req, res)=>{
 routerCtrl.adminDashboard = async (req, res)=>{
     const msgs = await Msg.find()
     let i = msgs.length
-    let msgBadge = msgCounter[i]
-    console.log(i)
-    await msgCounter.push(i)
+    msgCounter.push(i)
+    const msgBadge = msgCounter[i]
     res.render('admin/components/user/dashboard.ejs',{
         msgs,
         msgCounter,
