@@ -1,18 +1,22 @@
 const { Router } = require('express')
 const router = Router()
-const { adminIndex, adminSignIn, adminRegister, adminDashboard } = require('../views/admin/controllers/admin.controllers')
-const { fernandoIndex } = require('../views/fernando/controllers/fernando.controllers')
-const { fabiolaIndex } = require('../views/fabiola/controllers/fabiola.controllers')
+const { fernando, fabiola, mothtechAdmin } = require('../controllers/app.controllers')
 
+// mothtech_
 router.route('/').get((req, res)=>{res.send('Mothtech page on bilding...')})
 
-router.route('/admin').get(adminIndex)
-router.route('/admin/signin').get(adminSignIn)
-router.route('/admin/register').get(adminRegister)
-router.route('/admin/dashboard/:id').get(adminDashboard)
+// fabiola
+router.route('/fabiola').get(fabiola)
 
-router.route('/fernando').get(fernandoIndex)
+// fernando
+router.route('/fernando').get(fernando)
 
-router.route('/fabiola').get(fabiolaIndex)
+// admin
+router.route('/admin').get(mothtechAdmin.adminIndex)
+router.route('/admin/signin').get(mothtechAdmin.adminSignIn)
+router.route('/admin/register').get(mothtechAdmin.adminRegister)
+router.route('/admin/dashboard/:id').get(mothtechAdmin.adminDashboard)
+
+
 
 module.exports = router
